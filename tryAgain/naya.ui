@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1085</width>
+    <height>797</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>140</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:23px;
+color: rgb(170, 0, 127);</string>
+    </property>
+    <property name="text">
+     <string>Sort</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>640</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #aa007f;  /* Matte Yellow */
+    border-radius: 15px;
+    border: 2px solid #555;
+    min-width: 60px;
+    min-height: 30px;
+    color: #1E1E1E;  /* Matte Black text */
+	font-size: 23px;
+}
+
+QPushButton::checked {
+    background-color: #aa007f;  /* Matte Yellow */
+}
+
+QPushButton::before {
+    content: &quot;&quot;;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;  /* Handle color */
+    border-radius: 50%;
+    transition: left 0.3s;
+	font-size: 23px;
+}
+
+QPushButton::checked::before {
+    left: 35px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Pause</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>220</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #aa007f;  /* Matte Yellow */
+    border-radius: 10px;
+    border: 2px solid #555;
+    min-width: 60px;
+    min-height: 30px;
+    color: #1E1E1E;  /* Matte Black text */
+}
+
+QPushButton::checked {
+    background-color: #FFCC00;  /* Matte Yellow */
+}
+
+QPushButton::before {
+    content: &quot;&quot;;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;  /* Handle color */
+    border-radius: 50%;
+    transition: left 0.3s;
+}
+
+QPushButton::checked::before {
+    left: 35px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Load</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>140</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:23px;
+color: rgb(170, 0, 127);</string>
+    </property>
+    <property name="text">
+     <string>Order</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>140</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>251</width>
+      <height>31</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#FFFFFF;
+border-color:#1E1E1E;
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>BubbleSort</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MergeSort</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>640</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:#aa007f; 
+    border-radius: 15px;
+    border: 2px solid #555;
+    min-width: 60px;
+    min-height: 30px;
+    color: #1E1E1E;  /* Matte Black text */
+	font-size: 23px;
+}
+
+QPushButton::checked {
+    background-color: #aa007f; 
+}
+
+QPushButton::before {
+    content: &quot;&quot;;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;  /* Handle color */
+    border-radius: 50%;
+    transition: left 0.3s;
+	font-size: 23px;
+
+}
+
+QPushButton::checked::before {
+    left: 35px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Play</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>20</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>51</horstretch>
+      <verstretch>51</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>51</width>
+      <height>51</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/Icons/sort.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../final/final/rresources.qrc">:/Icons/sort.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>360</y>
+      <width>251</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #aa007f;  /* Matte Yellow */
+    border-radius: 15px;
+    border: 2px solid #555;
+    min-width: 60px;
+    min-height: 30px;
+    color: #1E1E1E;  /* Matte Black text */
+}
+
+QPushButton::checked {
+    background-color: #aa007f;  /* Matte Yellow */
+}
+
+QPushButton::before {
+    content: &quot;&quot;;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;  /* Handle color */
+    border-radius: 50%;
+    transition: left 0.3s;
+}
+
+QPushButton::checked::before {
+    left: 35px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Go to Sort</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>330</y>
+      <width>901</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>861</width>
+      <height>291</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#FFFFFF;color : #1E1E1E;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>10</y>
+      <width>199</width>
+      <height>69</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(170, 0, 127);
+background-color: rgb(0, 0, 127);</string>
+    </property>
+    <property name="text">
+     <string>SortScraper</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>650</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>111</width>
+      <height>41</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:#aa007f;font-size:25px;</string>
+    </property>
+    <property name="text">
+     <string>Sort Time :</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_2">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>140</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>251</width>
+      <height>31</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#FFFFFF;border-color:#1E1E1E;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Ascending</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Descending</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>640</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: #aa007f;
+  
+    border-radius: 15px;
+    border: 2px solid #555;
+    min-width: 60px;
+    min-height: 30px;
+    color: #1E1E1E;  /* Matte Black text */
+font-size: 23px;
+}
+
+QPushButton::checked {
+   
+	background-color: rgb(85, 0, 255);
+}
+
+QPushButton::before {
+    content: &quot;&quot;;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;  /* Handle color */
+    border-radius: 50%;
+    transition: left 0.3s;
+font-size: 23px;
+}
+
+QPushButton::checked::before {
+    left: 35px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>640</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #aa007f;  /* Matte Yellow */
+    border-radius: 15px;
+    border: 2px solid #555;
+    min-width: 60px;
+    min-height: 30px;
+    color: #1E1E1E;  /* Matte Black text */
+font-size: 23px;
+}
+
+QPushButton::checked {
+    background-color: #aa007f;  /* Matte Yellow */
+}
+
+QPushButton::before {
+    content: &quot;&quot;;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;  /* Handle color */
+    border-radius: 50%;
+    transition: left 0.3s;
+font-size: 23px;
+}
+
+QPushButton::checked::before {
+    left: 35px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>End</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>260</y>
+      <width>651</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../final/final/rresources.qrc"/>
+  <include location="../../../../../../Program Files (x86)/Qt Designer/rresources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
