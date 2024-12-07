@@ -72,13 +72,9 @@ class Ui_MainWindow(object):
         "")
                 self.pushButton_4.setObjectName("pushButton_4")
                 self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
-                self.pushButton_2.setGeometry(QtCore.QRect(800, 220, 201, 51))
-                font = QtGui.QFont()
-                self.pushButton_2.setFont(font)
-                self.pushButton_2.setStyleSheet("QPushButton {\n"
-        "    background-color: #aa007f;  /* Matte Yellow */\n"
+                "
         "    border-radius: 10px;\n"
-        "    border: 2px solid #555;\n"
+        "    border: 2px solid #555;\n".c;sld;clvs;c'v
         "    min-width: 60px;\n"
         "    min-height: 30px;\n"
         "    color: #1E1E1E;  /* Matte Black text */\n"
